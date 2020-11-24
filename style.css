@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: monospace;
+}
+
+nav {
+    background-color: cadetblue;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+label.logo {
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a.link-menu,
+a:hover {
+    background: rgb(38, 158, 162);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo {
+        font-size: 25px;
+        padding-left: 50px;
+        
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 72, 75);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: rgb(38, 158, 162);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    h1.header-title{
+        font-size: 50px;
+    }
+    p.header-subtitle{
+        font-size: 22px;
+    }
+    div.btn-result{
+        font-size: 16;
+        padding: 50px ;
+    }
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(https://img5.goodfon.ru/original/6493x3450/2/a9/elektronnaia-plata-platy-mikroskhemy.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.header-title {
+    color: rgb(47, 194, 199);
+    text-align: center;
+    padding-top: 200px;
+    font-size: 70px;
+}
+
+.header-subtitle {
+    color: rgb(47, 194, 199);
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.header-btn{
+    padding: 15px 60px 15px 60px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(1, 89, 100);
+    color: rgb(47, 194, 199);
+    transition: all .5s;
+}
+.header-btn:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+    background-color: rgb(2, 68, 77);
+}
+.btn-result{
+    width: 100%;
+    height: auto;
+    background-color: rgb(3, 77, 77);
+    padding: 100px ;
+    font-size: 20px;
+}
