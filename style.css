@@ -69,12 +69,10 @@ a:hover {
     label.logo {
         font-size: 25px;
         padding-left: 50px;
-        
     }
     nav ul li a {
         font-size: 16px;
     }
-    
 }
 
 @media (max-width: 858px) {
@@ -107,15 +105,16 @@ a:hover {
     #check:checked~ul {
         left: 0;
     }
-    h1.header-title{
+    h1.header-title {
         font-size: 50px;
+        padding-top: 100px;
     }
-    p.header-subtitle{
+    p.header-subtitle {
         font-size: 22px;
     }
-    div.btn-result{
-        font-size: 16;
-        padding: 50px ;
+    div.btn-result {
+        font-size: 15px;
+        padding: 50px;
     }
 }
 
@@ -139,12 +138,14 @@ a:hover {
     text-transform: uppercase;
     margin-top: 30px;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     margin: 50px;
 }
-.header-btn{
+
+.header-btn {
     padding: 15px 60px 15px 60px;
     outline: none;
     cursor: pointer;
@@ -152,16 +153,19 @@ a:hover {
     background-color: rgb(1, 89, 100);
     color: rgb(47, 194, 199);
     transition: all .5s;
+    border-radius: 7px;
 }
-.header-btn:hover{
+
+.header-btn:hover {
     transition: all .5s;
     transform: scale(1.1);
     background-color: rgb(2, 68, 77);
 }
-.btn-result{
+
+.btn-result {
     width: 100%;
     height: auto;
     background-color: rgb(3, 77, 77);
-    padding: 100px ;
+    padding: 100px;
     font-size: 20px;
 }
